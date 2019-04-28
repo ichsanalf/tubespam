@@ -11,7 +11,7 @@ class _LauncherPageState extends State<LauncherPage> {
   @override
 
   void initState(){
-    ///metodh ini mirip seperti onCreate()
+    ///method ini mirip seperti onCreate()
     super.initState();
     startLaunching();
   }
