@@ -69,7 +69,7 @@ class _LandingPageState extends State<LandingPage> {
             color: Colors.black,
           ),
           icon: new Icon(
-            Icons.account_circle,
+            Icons.settings,
             color: Colors.grey,
           ),
           title: new Text(

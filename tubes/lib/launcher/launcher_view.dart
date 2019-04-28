@@ -17,7 +17,7 @@ class _LauncherPageState extends State<LauncherPage> {
   }
 
   startLaunching() async {
-    var duration = const Duration(seconds: 1); //set durasi untuk splashscreen
+    var duration = const Duration(seconds: 2); //set durasi untuk splashscreen
     return new Timer(duration, ()
     {
       Navigator.of(context).pushReplacement(new MaterialPageRoute(builder: (_) {
@@ -36,11 +36,16 @@ class _LauncherPageState extends State<LauncherPage> {
   @override
   Widget build(BuildContext context){
     return new Scaffold(
-      body: new Center(
-        child: new Image.asset(
-          "asset/img_logo.png", //memanggil logo image pada assets
-          height: 100.0,
-          width: 200.0,
+      backgroundColor: Colors.white,
+
+      body:
+      new Container(
+        child: new Center(
+          child: new Image.asset(
+            "assets/img_logo.png", //memanggil logo image pada assets
+            height: 100.0,
+            width: 100.0,
+          ),
         ),
       ),
     );
